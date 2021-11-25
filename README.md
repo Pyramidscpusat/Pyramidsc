@@ -1,1 +1,0 @@
-# pyramidsc.github.io
