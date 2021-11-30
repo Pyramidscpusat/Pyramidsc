@@ -152,13 +152,13 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>Daftar Lomba</h2>
+            <h2>Daftar Lomba Time Trial</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terima Kasih!</strong> Pesan anda sudah kami terima dengan baik.
+            <div class="alert alert-danger alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terima Kasih!</strong> Pesan anda sudah kami terima, lakukan pendaftaran ulang jika anda ingin mendaftakan nomor lomba selanjutnya !!!
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="pyramid-contact-form">
@@ -170,10 +170,12 @@
               <div class="mb-3">
                 <label for="name" class="form-label">Catatan waktu</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="time"/>
+                <div id="emailHelp" class="form-text">Contoh format waktu: 01.10.20 (menit,detik,milidetik)</div>
               </div>
               <div class="mb-3">
-                <label for="name" class="form-label"> Tempat, Tanggal lahir</label>
+                <label for="name" class="form-label">Tanggal lahir</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="TTL"/>
+                <div id="emailHelp" class="form-text">Contoh format tanggal lahir: 12 Desember 1998</div>
               </div>
              
               <div class="input-group mb-3">
@@ -193,6 +195,7 @@
                   <option value="punggung">punggung</option>
                   <option value="kupukupu">kupukupu</option>
                   <option value="dada">dada</option>
+                  <option value="dada">gaya ganti perorangan</option>
                 </select>
               </div>
 
@@ -204,6 +207,8 @@
                   <option value="100">100</option>
                   <option value="200">200</option>
                   <option value="400">400</option>
+                  <option value="400">800</option>
+                  <option value="400">1500</option>
                 </select>
               </div>
 
@@ -218,7 +223,25 @@
                   <option value="Group4">Group4</option>
                 </select>
               </div>
-              
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="nolomba" id="name">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Saya hanya mengikuti 1 nomor lomba
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="nolomba" id="name" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Saya akan mengisi ulang form, karena saya mengikuti lebih dari 1 nomor lomba
+                </label>
+              </div>
+
+              <div class="form-check form-switch mb-4">
+                <input class="form-check-input" type="checkbox" id="name" name="sure">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Saya sudah mengisi form dengan benar dan lengkap</label>
+              </div>
+
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
