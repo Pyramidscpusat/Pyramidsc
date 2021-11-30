@@ -166,10 +166,7 @@
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"/>
               </div>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nomor Lomba</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nolomba"/>
-              </div>
+              
               <div class="mb-3">
                 <label for="name" class="form-label">Catatan waktu</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="time"/>
@@ -178,18 +175,50 @@
                 <label for="name" class="form-label"> Tempat, Tanggal lahir</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="TTL"/>
               </div>
-              <div class="mb-3">
-                <label for="name" class="form-label">Jenis kelamin</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="kelamin"/>
+             
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Gender</label>
+                <select class="form-select" id="name" name="gender">
+                  <option selected>Choose...</option>
+                  <option value="putra">putra</option>
+                  <option value="putri">putri</option>
+                </select>
               </div>
-              <div class="mb-3">
-                <label for="name" class="form-label">Kelas semi/pro</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="semi/pro"/>
+
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Gaya</label>
+                <select class="form-select" id="name" name="gaya">
+                  <option selected>Choose...</option>
+                  <option value="bebas">bebas</option>
+                  <option value="punggung">punggung</option>
+                  <option value="kupukupu">kupukupu</option>
+                  <option value="dada">dada</option>
+                </select>
               </div>
-              <div class="mb-3">
-                <label for="Pesan" class="form-label">Kirim Pesan</label>
-                <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
+
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Jarak</label>
+                <select class="form-select" id="name" name="jarak">
+                  <option selected>Choose...</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="200">200</option>
+                  <option value="400">400</option>
+                </select>
               </div>
+
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Group</label>
+                <select class="form-select" id="name" name="group">
+                  <option selected>Choose...</option>
+                  <option value="Senior">Senior</option>
+                  <option value="Group1">Group1</option>
+                  <option value="Group2">Group2</option>
+                  <option value="Group3">Group3</option>
+                  <option value="Group4">Group4</option>
+                </select>
+              </div>
+              
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
